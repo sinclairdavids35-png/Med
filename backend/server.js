@@ -17,6 +17,7 @@ app.get("/", (req, res) => {
 app.use("/api/auth", require("./routes/authRoutes"));
 app.use("/api/articles", require("./routes/articleRoutes"));
 app.use("/api/forums", require("./routes/forumRoutes"));
+app.use("/api/jokes", require("./routes/jokeRoutes")); // Add joke routes
 
 // FIX: Proper async error handling on startup
 const startServer = async () => {
